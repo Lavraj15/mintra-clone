@@ -467,6 +467,7 @@
     font-weight: bold;
     font-size: 14px;
   }
+<<<<<<< HEAD
   @media(max-width: 768px) {
   nav ul li {
     padding: 0px 10px;
@@ -497,3 +498,6 @@
 }
 
   
+=======
+  
+>>>>>>> e71ce8c62a00e09e5ec95e6af6ec2f4e8e49f932
