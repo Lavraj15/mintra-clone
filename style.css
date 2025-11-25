@@ -56,7 +56,7 @@
   
   .container img {
     cursor: pointer;
-    width: 98.5vw;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 25px;
@@ -70,13 +70,15 @@
   
   .section img {
     cursor: pointer;
-    width: 48vw;
+    width: 100%;
     background-size: cover;
+    max-width: 600px;
   }
   
   .section1 img {
     cursor: pointer;
-    width: 100vw;
+    width: 100%;
+    max-width: 300px;
     background-size: cover;
   }
   
@@ -87,13 +89,15 @@
   
   .section2 img {
     cursor: pointer;
-    width: 285px;
+    width: 100%;
+    max-width: 300px;
     height: 380px;
   }
   
   .section3 img {
     cursor: pointer;
-    width: 100vw;
+    width: 100%;
+    max-width: 300px;
     background-size: cover;
   }
   
@@ -104,13 +108,15 @@
   
   .section4 img {
     cursor: pointer;
-    width: 290px;
+    width: 100%;
+    max-width: 300px;
     height: 345px;
   }
   
   .section5 img {
     cursor: pointer;
-    width: 100vw;
+    width: 100%;
+    max-width: 300px;
     background-size: cover;
   }
   
@@ -121,13 +127,15 @@
   
   .section6 img {
     cursor: pointer;
-    width: 291px;
+    width: 100%;
+    max-width: 300px;
     height: 375px;
   }
   
   .section7 img {
     cursor: pointer;
-    width: 100vw;
+    width: 100%;
+    max-width: 300px;
     background-size: cover;
   }
   
@@ -138,7 +146,8 @@
   
   .section8 img {
     cursor: pointer;
-    width: 261px;
+    width: 100%;
+    max-width: 300px;
     height: 351px;
   }
   
@@ -168,6 +177,9 @@
     display: flex;
     align-items: center;
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
   }
   
   .right input {
@@ -183,10 +195,34 @@
     background: #f5f5f6;
   }
   
-  #icons {
+  /* #icons {
     display: flex;
     margin: 0px 42px;
-  }
+  } */
+   #icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: 20px;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-box img {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-box div {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
   
   .profile,
   .wish,
@@ -431,4 +467,33 @@
     font-weight: bold;
     font-size: 14px;
   }
+  @media(max-width: 768px) {
+  nav ul li {
+    padding: 0px 10px;
+    font-size: 12px;
+  }
+
+  .section,
+  .section2,
+  .section4,
+  .section6,
+  .section8 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section img,
+  .section2 img,
+  .section4 img,
+  .section6 img,
+  .section8 img {
+    max-width: 90%;
+  }
+
+  .footer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
   
